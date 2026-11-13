@@ -1,0 +1,6 @@
+- name: variables from inventory
+  hosts: local
+  tasks:
+  - name: print the variables
+    debug:
+      msg: "Hi, iam learing {{ course }} from {{ trainer }} duration is {{ duration }}"
