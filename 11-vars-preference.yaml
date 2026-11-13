@@ -1,0 +1,20 @@
+- name: variables from files
+  hosts: local
+  connection: local
+  vars:
+    course: "Ansible from PLAY"
+  
+  vars_prompt:
+  - name: course
+    prompt: "Please enter your course"
+    private: false
+
+  vars_files:
+  - course.yaml
+  
+  tasks:
+  - name: print course information
+    vars:
+      course: "Ansible from task"
+    debug:
+      msg: "Hi, iam learing {{ course }} from {{ trainer }} duration is {{ duration }}"
