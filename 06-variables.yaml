@@ -7,6 +7,7 @@
    - name: print the vars
      debug:
         msg: "Hi, i got {{property}} from my father"
+        
    - name: print the vars again
      vars:
        property: "10acers"
