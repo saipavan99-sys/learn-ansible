@@ -1,0 +1,27 @@
+{
+    "Firstname": "saipavan",
+    "LastName": "B",
+    "Dob": "01-01-01",
+    "Adresses": [                          
+        {
+            "type": "Present",
+            "Doorno": "1-121",
+            "Streetname": "Gandhi Nagar",
+            "City": "Hyderabad"
+        },
+        
+        {
+            "type": "Permanent",
+            "Doorno": "1-121",
+            "Streetname": "Gandhi Nagar",
+            "City": "Hyderabad"
+
+        }
+    ],
+    "Skills": {
+        "Os": "Linux",
+        "IDE": "VsCode",
+        "CM": "Ansible"
+    }
+    
+}

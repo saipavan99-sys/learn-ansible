@@ -1,0 +1,18 @@
+<student>
+    <FirstName>saipavan</FirstName>
+    <LastName>B</LastName>
+    <Dob>01-01-01</Dob>
+    <Adresses>
+        <Adress type="temporary">
+             <Doorno>1-121</Doorno>
+         <StreetName>Gandhi Nagar</StreetName>
+         <City>Hyderabad</City>
+        </Adress>
+
+        <Adress type="Perminent">
+         <Doorno>1-121</Doorno>
+         <StreetName>Gandhi Nagar</StreetName>
+         <City>Hyderabad</City>
+        </Adress>
+    </Adresses>
+</student>

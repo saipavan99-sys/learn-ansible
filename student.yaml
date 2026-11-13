@@ -1,0 +1,35 @@
+- first_name: "saipavan"
+  last_name: "B"
+  dob: "01-01-01"
+  # - is List
+  Adresses:
+  - type: parmnent
+    DoorNo: 1-121
+    streetname: Gandi Nagar
+    City : Hyderabad
+  - type: present
+    DoorNo: 1-121
+    streetname: Gandi Nagar
+    City : Hyderabad  
+  Skills:
+    os: Linux
+    IDE: VsCode
+    Cm: Ansible
+
+- first_name: "saipavan"
+  last_name: "B"
+  dob: "01-01-01"
+  # - is for List
+  Adresses:
+  - type: parmnent
+    DoorNo: 1-121
+    streetname: Gandi Nagar
+    City : Hyderabad
+  - type: present
+    DoorNo: 1-121
+    streetname: Gandi Nagar
+    City : Hyderabad  
+  Skills:
+    os: Linux
+    IDE: VsCode
+    Cm: Ansible
