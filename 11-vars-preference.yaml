@@ -14,7 +14,10 @@
   
   tasks:
   - name: print course information
-    vars:
-      course: "Ansible from task"
+    #vars:
+    #  course: "Ansible from task"
     debug:
       msg: "Hi, iam learing {{ course }}"
+
+# 1. cmd line variable has the highest preference
+  2. task variable has the second highest preference
