@@ -3,7 +3,7 @@
   connection: local
   vars:
     course: "Ansible"
-    trainer: "saipavan"
+    trainer: "sivakumar"
     duration: "10 Hrs"
   tasks:
    - name: print the vars
