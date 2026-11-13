@@ -1,8 +1,14 @@
-- name: install and start nginx
+- name: install and start nginx 
   hosts: frontend
   become: yes # giving root privilages to the user to install and start nginx
   tasks:
-  - name: install nginx
+  - name: install nginx # installing nginx package
     package:
       name: nginx
       state: present
+   
+  - name: Start nginx # starting nginx service
+    service:
+      name: nginx
+      state: started
+      enabled: yes
