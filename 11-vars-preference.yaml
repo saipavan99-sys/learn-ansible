@@ -20,4 +20,4 @@
       msg: "Hi, iam learing {{ course }}"
 
 # 1. cmd line variable has the highest preference
-  2. task variable has the second highest preference
+# 2. task variable has the second highest preference
