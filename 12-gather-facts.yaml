@@ -4,4 +4,12 @@
   tasks:
   - name: print the facts
     debug:
-      msg: "{{ ansible_facts }}"
+      msg: "{{ ansible_facts }}"  
+  
+  - name: print some info
+    debug:
+      msg: |
+        os family: {{ ansible_facts['os_family'] }}
+        private ip: {{ ansible_facts.default_ipv4.address }}
+        private ip: {{ ansible_facts['default_ipv4']['address'] }}
+        
