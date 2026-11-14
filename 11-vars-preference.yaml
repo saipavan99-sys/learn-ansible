@@ -14,10 +14,14 @@
   
   tasks:
   - name: print course information
-    #vars:
-    #  course: "Ansible from task"
+    vars:
+      course: "Ansible from task"
     debug:
       msg: "Hi, iam learing {{ course }}"
 
 # 1. cmd line variable has the highest preference
 # 2. task variable has the second highest preference
+# 3. file variable has the third highest preference
+# 4. prompt variable has the fourth highest preference
+# 5. play level variable has the fifth highest preference
+# 6. inventory variable has the sixth highest preference and least priority
