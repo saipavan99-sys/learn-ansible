@@ -7,10 +7,7 @@
     dnf:
       state: present
       name: nginx
-    when: ansible_facts.os_family == "RedHat" #expression
-
-  - name: Installing nginx in Debain
-    apt:
-      state: present
-      name: nginx
-    when: ansible_facts.os_family == "Debain" #expression  
+  loop:
+    - nginx
+    - httpd
+    - mariadb  
