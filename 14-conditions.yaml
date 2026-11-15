@@ -4,7 +4,7 @@
   vars:
     given_number: 10
   tasks:
-   - name: is even
+  - name: is even
     debug:
       msg: "Given number {{ given_number }} is even"
     when: given_number % 2 == 0 #expression
