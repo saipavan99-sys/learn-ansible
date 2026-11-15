@@ -11,3 +11,7 @@
   - name: Print the user_output
     debug:
       msg: "{{ user_output }}"  
+
+  - name: Create user
+    command: useradd roboshop
+    when: user_output.rc != 0
