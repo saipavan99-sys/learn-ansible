@@ -1,7 +1,13 @@
 - name: Demo on filters
   hosts: local
   connection: local
+  vars:
+    topics: "Linux, Ansible, DevOps, shell"
   tasks:
   - name: print the name
     debug:
       msg: "Hi,{{ person_name | default('saipavan') }}" 
+
+  - name: convert string to list
+    debug:
+      msg: "topics are: {{ topics | split(',') | trim }}"    
