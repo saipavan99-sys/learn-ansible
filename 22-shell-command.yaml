@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   tasks:
-  - name: test command module
+  - name: test the command module
     #command: cat /etc/passwd | grep ec2-user
     Shell: cat /etc/passwd | grep ec2-user
     register: ec2_user_output
