@@ -3,6 +3,10 @@
   connection: local
   vars:
     topics: "Linux, Ansible, DevOps, shell"
+    names:
+    - sai
+    - pavan
+    - balina
   tasks:
   - name: print the name
     debug:
@@ -10,4 +14,8 @@
 
   - name: convert string to list
     debug:
-      msg: "topics are: {{ topics | split(',') | trim }}"    
+      msg: "topics are: {{ topics | split(',') | trim }}"  
+
+  - name:
+    debug:
+      msg: "Full name: {{ names | join }}"       
