@@ -7,6 +7,7 @@
     - sai
     - pavan
     - balina
+    topic: ANSIBLE
   tasks:
   - name: print the name
     debug:
@@ -16,6 +17,10 @@
     debug:
       msg: "topics are: {{ topics | split(',') | trim }}"  
 
-  - name:
+  - name: convert list to string
     debug:
-      msg: "Full name: {{ names | join(' ') }}"       
+      msg: "Full name: {{ names | join(' ') }}" 
+
+  - name: convert to lower case
+    debug:
+      msg: "Topic: {{ topic | lower }}"      
